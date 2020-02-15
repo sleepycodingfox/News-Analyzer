@@ -1,0 +1,23 @@
+{
+  "name": "diplom.y.praktikum2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesertoRaposa/Diplom.Y.Praktikum2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DesertoRaposa/Diplom.Y.Praktikum2020/issues"
+  },
+  "homepage": "https://github.com/DesertoRaposa/Diplom.Y.Praktikum2020#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
