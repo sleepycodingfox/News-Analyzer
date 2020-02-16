@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>diploma</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 
 <body>
@@ -17,7 +17,9 @@
             you're looking for?…
         </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>">
+
+    </script>
 </body>
 
 </html>
