@@ -1,0 +1,24 @@
+.about-author__photo {
+	margin-top: 80px;
+	width:calc(100% - 600px);
+
+}
+
+
+
+  @media (max-width: 320px) {
+    .about-author__photo{
+	width:calc(100% - 48px);
+	margin-top: 20px;
+	margin-bottom: 24px;
+    }
+  } 
+
+@media (min-width: 321px) and (max-width: 768px) {
+	  .about-author__photo{
+		max-width: 232px;
+		margin-top: 40px;
+		width:calc(100% - 424px);
+	
+    }
+} 

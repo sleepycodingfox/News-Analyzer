@@ -1,0 +1,37 @@
+.techstack-card__icon {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    background-image: url(../../../../../../images/html.svg);
+    top: 14px;
+    left: 19px;
+}
+
+.bg_1 {
+    background-image: url(../../../../../../images/cssicon.svg);
+}
+
+.letter_j {
+    background-image: url(../../../../../../images/j.svg);
+    width: 26px;
+    height: 43px;
+    position: absolute;
+    top: 42px;
+    left: 24px;
+}
+
+.letter_s {
+    background-image: url(../../../../../../images/s.svg);
+    width: 30px;
+    height: 43px;
+    position: absolute;
+    top: 42px;
+    left: 55px;
+
+}
+
+.bg_4 {
+    background-image: url('../../../../../../images/webpack_2.svg');
+    position: absolute;
+    top: 20px;
+}

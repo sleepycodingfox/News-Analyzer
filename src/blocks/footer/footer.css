@@ -1,0 +1,27 @@
+
+@import url('../footer/__columns/footer__columns.css');
+@import url('../footer/__columns/__social/footer__social.css');
+@import url('../footer/__columns/__social/_icons/footer__social_icons.css');
+@import url('../footer/__columns/__info/footer__info.css');
+@import url('../footer/__columns/__author/footer__author.css');
+
+
+
+.footer {
+    background-color: yellow;
+    height: 80px;
+}
+
+@media (max-width: 320px) {
+    .footer {
+        max-width: 320px;
+
+ }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+ .footer {
+    max-width: 768px;
+
+ }
+} 

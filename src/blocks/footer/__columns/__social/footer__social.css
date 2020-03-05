@@ -1,0 +1,29 @@
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    padding-right: 53px;
+  }
+  
+
+  .footer__social a {
+    margin-right: 28px;
+  }
+
+  .footer__social a:last-child {
+    margin-right: 0px;
+  }
+
+  
+@media (max-width: 320px) {
+  .footer__social {
+    padding: 0;
+    margin-top: 20px; 
+  }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+.footer__social {
+  padding-right: 20px;
+  }
+} 

@@ -1,0 +1,25 @@
+
+.card__date{
+	color: #B6BCBF;
+	font-size: 18px;
+	width: 352px;
+	margin: auto;
+	margin-top:20px;
+
+}
+
+
+
+  @media (max-width: 320px) {
+     .card__date {
+		margin-top: 12px;
+		max-width: 256px;
+  }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .card__date {
+	width: 192px;
+	margin-top:16px;
+  }
+} 

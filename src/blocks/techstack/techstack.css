@@ -1,0 +1,56 @@
+@import  url('./__container/__title/techstack__title.css');
+@import  url('./__container/__wrapper/techstack__wrapper.css');
+@import  url('./__container/__wrapper/__card/techstack__card.css');
+@import  url('./__container/__wrapper/__card/__icon/techstack-card__icon.css');
+@import  url('./__container/__wrapper/__card/__name/techstack-card__name.css');
+@import  url('./__container/__wrapper/__card/__icon/_wrap/techstack-card__icon_wrap.css');
+@import  url('./__container/techstack__container.css');
+
+
+.techstack {
+    background: #F5F6F7;
+    color: #1A1B22;
+}
+
+@media (max-width: 320px) {
+    .techstack__container {
+        width: calc(100% - 32px);
+        flex-direction: column;
+    
+    }
+    .techstack__title {
+        margin-top: 32px;
+        font-size: 30px;
+    }
+    .techstack__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 112px);
+        grid-gap: 41px 64px;
+        width: 100%;
+        margin-bottom: 52px;
+        margin-top: 40px;
+    }
+    .techstack__card {
+        max-width: 112px;
+    }
+    
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .techstack__container {
+        width: calc(100% - 80px);
+        flex-direction: column;
+    }
+    .techstack__title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .techstack__wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 112px);
+        grid-gap: 72px;
+        width: 100%;
+        margin-bottom: 49px;
+    }
+} 

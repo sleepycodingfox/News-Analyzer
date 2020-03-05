@@ -1,0 +1,8 @@
+.analytics__wrap {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 208px);
+    padding-top: 40px;
+    margin:auto; 
+}
+

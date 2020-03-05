@@ -1,0 +1,25 @@
+
+@import  url('./__wrapper/about-author__wrapper.css');
+@import  url('./__wrapper/__container/about-author__container.css');
+@import  url('./__wrapper/__photo/about-author__photo.css');
+@import  url('./__wrapper/__container/__subtitle/about-author__subtitle.css');
+@import  url('./__wrapper/__container/__info/about-author__info.css');
+
+.about-author{
+    max-width: 1440px;
+	color: #1A1B22;
+	background-color: red;
+	
+}
+
+  @media (max-width: 320px) {
+    .about-author {
+	max-width: 320px;
+    }
+  } 
+
+@media (min-width: 321px) and (max-width: 768px) {
+	.about-author {
+		max-width: 768px;
+	}
+} 

@@ -1,0 +1,14 @@
+.searchbg{
+    background-image: url('../../images/georgia.png');
+    height: 576px;
+}
+
+  @media (max-width: 320px) {
+    .searchbg{
+	
+    }
+  } 
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+} 

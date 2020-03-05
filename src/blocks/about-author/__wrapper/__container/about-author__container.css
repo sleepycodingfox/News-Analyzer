@@ -1,0 +1,25 @@
+.about-author__container{
+   margin-left: 56px;
+   width: calc(100% - 464px);
+   margin-top: 131px;
+   padding-right: 20px;
+}
+
+  @media (max-width: 320px) {
+    .about-author__container{
+		width: 288px;
+		margin-top: 24px;
+		padding: 0;
+		margin: auto;
+		
+    }
+  } 
+
+@media (min-width: 321px) and (max-width: 768px) {
+	    .about-author__container{
+		margin-top: 42px;
+		width: calc(100% - 232px);
+		margin-left: 32px;
+		padding-right: 20px;
+    }
+} 

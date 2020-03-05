@@ -1,0 +1,11 @@
+.graph__cell {
+   
+}
+
+.graph__cell:first-child {
+   margin-right: 40px;
+}
+
+.graph__cell_counter {
+   margin-left: 104px;
+}

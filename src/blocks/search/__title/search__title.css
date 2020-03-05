@@ -1,0 +1,21 @@
+.search__title {
+    max-width: 608px;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+@media (max-width: 320px) {
+    .search__title{
+		max-width: 285px;
+		font-size: 36px;
+		margin-top: 30px;
+    }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .search__title{
+        max-width: 385px;
+        font-size: 36px;
+        margin-top: 40px;
+    }
+} 

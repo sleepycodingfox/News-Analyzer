@@ -1,0 +1,9 @@
+.graph__container_counterwrap {
+    display: flex;
+    color: #B6BCBF;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: 16px;
+
+  
+}

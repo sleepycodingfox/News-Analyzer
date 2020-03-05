@@ -1,0 +1,27 @@
+
+.card__name{
+	width: 352px;
+	margin: auto;
+	margin-top:12px;
+	font-size: 26px;
+
+}
+
+
+.card__name_width{
+	font-size: 26px;
+}
+
+  @media (max-width: 320px) {
+     .card__name {
+  	font-size: 22px;
+	max-width: 256px;
+  }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .card__name {
+	font-size: 22px;
+	width: 192px;
+  }
+} 
