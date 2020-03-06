@@ -24,7 +24,7 @@ module.exports = {
 				loader: 'file-loader?name=./vendor/fonts/[name].[ext]'
 			},
 			{
-				test: /\.(png|jpe?g|gif|svg)$/i,
+				test: /\.(png|jpe?g|gif|ico|svg)$/i,
 				use: [
 					{
 						loader: 'file-loader?name=./images/[name].[ext]',
@@ -69,17 +69,21 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			inject: false,
 			template: './src/index.html',
-			filename: 'index.html'
+			filename: 'index.html',
+			favicon: './src/images/favicon.ico'
 		}),
 		new HtmlWebpackPlugin({
 			inject: false,
 			template: './src/about.html',
-			filename: 'about.html'
+			filename: 'about.html',
+			favicon: './src/images/group.ico'
+	
 		}),
 		new HtmlWebpackPlugin({
 			inject: false,
 			template: './src/analytics.html',
-			filename: 'analytics.html'
+			filename: 'analytics.html',
+			favicon: './src/images/group03.ico'
 		}),
 		
 		new WebpackMd5Hash(),
