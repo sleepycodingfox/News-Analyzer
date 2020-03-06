@@ -11,6 +11,8 @@
 @import url(../blocks/about/about.css);
 @import url(../blocks/techstack/techstack.css);
 @import url(../blocks/gh-history/gh-history.css);
+@import url(../blocks/noresult/noresult.css);
+@import url(../blocks/preloader/preloader.css);
 
   body {
 	color: #ffffff;

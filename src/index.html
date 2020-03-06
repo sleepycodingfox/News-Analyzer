@@ -37,10 +37,15 @@
 				</form>
 			</section>
 		</div>
-
-
-
-
+		<section class="preloader" style="display: none;">
+			<i class="preloader__circle"></i>
+			<p class="preloader__info">Идет поиск новостей...</p>
+		</section>
+		<section class="noresult" style="display: none;">
+			<img src="<%=require('./images/nores.svg')%>" alt="Вернуться на главную страницу" class="noresult__img">
+			<h3 class="noresult__message">Ничего не найдено</h3>
+			<p class="noresult__messageWhy">К сожалению по вашему запросу ничего не найдено.</p>
+		</section>
 		<section class="searchresult">
 			<div class="title__wrapper ">
 				<h2 class="subtitle"> Результаты поиска </h2>
