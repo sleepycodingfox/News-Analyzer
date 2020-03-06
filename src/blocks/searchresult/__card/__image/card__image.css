@@ -6,6 +6,8 @@
 	border-top-right-radius: 10px;
 }
 
+
+
   @media (max-width: 320px) {
      .card__image {
 		height: 196px;

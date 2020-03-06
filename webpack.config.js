@@ -1,41 +1,92 @@
-
 const path = require('path');
-// подключаем path к конфигу вебпак
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// подключили к проекту плагин
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const WebpackMd5Hash = require('webpack-md5-hash');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+const webpack = require('webpack');
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-    entry: { main: './src/index.js' },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
-    },
-    module: {
-        rules: [{ // тут описываются правила
-            test: /\.js$/, // регулярное выражение, которое ищет все js файлы
-            use: { loader: "babel-loader" }, // весь JS обрабатывается пакетом babel-loader
-            exclude: /node_modules/ // исключает папку node_modules
-        },
-        {
-            test: /\.css$/, // применять это правило только к CSS-файлам
-            use: [MiniCssExtractPlugin.loader, 'css-loader','postcss-loader'] // к этим файлам нужно применить пакеты, которые мы уже установили
-        }
-        ]
-    },
-    plugins: [
-        new MiniCssExtractPlugin({
-             filename: 'style.[contenthash].css'
-             }),
-        new HtmlWebpackPlugin({
-            // Означает, что:
-            inject: false, // стили НЕ нужно прописывать внутри тегов
-            template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
-            filename: 'index.html' // имя выходного файла, то есть того, что окажется в папке dist после сборки
-          }),
-
-          new WebpackMd5Hash()
-    ]
+	entry: { main: './src/index.js',
+			about: './src/about.js',
+			analytics: './src/analytics.js'
+			},
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: '[name].[chunkhash].js'
+			},
+	module: {
+		rules: [
+			{
+				test: /\.(eot|ttf|woff|woff2)$/,
+				loader: 'file-loader?name=./vendor/fonts/[name].[ext]'
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				use: [
+					{
+						loader: 'file-loader?name=./images/[name].[ext]',
+						options: {
+							name: './images/[name].[ext]',
+							esModule: false
+						}
+					},
+					{
+						loader: 'image-webpack-loader',
+						options: {}
+					}
+				]
+			},
+			{
+				test: /\.js$/,
+				use: { loader: "babel-loader" },
+				exclude: /node_modules/
+			},
+			{
+				test: /\.css$/,
+				use: [
+					(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+					'css-loader',
+					'postcss-loader'
+				]
+			}
+		]
+	},
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: 'style.[contenthash].css'
+		}),
+		new OptimizeCssAssetsPlugin({
+			assetNameRegExp: /\.css$/g,
+			cssProcessor: require('cssnano'),
+			cssProcessorPluginOptions: {
+				preset: ['default'],
+			},
+			canPrint: true
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			template: './src/index.html',
+			filename: 'index.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			template: './src/about.html',
+			filename: 'about.html'
+		}),
+		new HtmlWebpackPlugin({
+			inject: false,
+			template: './src/analytics.html',
+			filename: 'analytics.html'
+		}),
+		
+		new WebpackMd5Hash(),
+		new webpack.DefinePlugin({
+			'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+			'API_URL': JSON.stringify('http://10.10.10.10:8080/bands')
+		})
+	]
 }
 

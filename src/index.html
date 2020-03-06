@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Author" content="Хайруллина Резеда">
 	<title>DIPLOMA</title>
-	<link rel="stylesheet" href="vendor/normalize.css">
-	<link rel="stylesheet" href="pages/index.css">
+	<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+
 </head>
 
 <body>
@@ -36,15 +37,20 @@
 				</form>
 			</section>
 		</div>
+
+
+
+
 		<section class="searchresult">
 			<div class="title__wrapper ">
 				<h2 class="subtitle"> Результаты поиска </h2>
 				<a class="infolink" href="analytics.html"> Посмотреть аналитику <img
-						src="images/arrow.svg" alt="Вернуться на главную страницу"> </a>
+						src="<%=require('./images/arrow.svg') %>" alt="Вернуться на главную страницу"> </a>
 			</div>
 			<div class="cardlist">
 				<a class="card" href="#">
-					<div class="card__image" style="background-image: url('images/image1.png')" ;> </div>
+					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
 					<h3 class="card__name"> Национальное достояние – парки </h3>
 					<p class="card__description">
@@ -54,8 +60,8 @@
 					<div class="card__source"> Лента.ру </div>
 				</a>
 				<a class="card" href="#">
-					<div class="card__image" style="background-image: url('images/image2.png')" ;>
-					</div>
+					<img src="<%=require('./images/image2.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
 					<h3 class="card__name"> Лесные огоньки: история одной фотографии </h3>
 					<p class="card__description">
@@ -66,8 +72,8 @@
 					<div class="card__source"> Медуза </div>
 				</a>
 				<a class="card" href="#">
-					<div class="card__image" style="background-image: url('images/image3.png')" ;>
-					</div>
+					<img src="<%=require('./images/image3.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
 					<h3 class="card__name"> «Первозданная тайга»: новый фотопроект Игоря Шпиленка </h3>
 					<p class="card__description">
@@ -77,7 +83,8 @@
 					<div class="card__source"> Риа </div>
 				</a>
 				<a class="card" href="#" style="display:none">
-					<div class="card__image" style="background-image: url('images/image1.png')" ;> </div>
+					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
 					<h3 class="card__name"> Национальное достояние – парки </h3>
 					<p class="card__description">
@@ -87,8 +94,8 @@
 					<div class="card__source"> Лента.ру </div>
 				</a>
 				<a class="card" href="#" style="display:none">
-					<div class="card__image" style="background-image: url('images/image2.png')" ;>
-					</div>
+					<img src="<%=require('./images/image2.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
 					<h3 class="card__name"> Лесные огоньки: история одной фотографии </h3>
 					<p class="card__description">
@@ -99,8 +106,8 @@
 					<div class="card__source"> Медуза </div>
 				</a>
 				<a class="card" href="#" style="display:none">
-					<div class="card__image" style="background-image: url('images/image3.png')" ;>
-					</div>
+					<img src="<%=require('./images/image3.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
 					<h3 class="card__name"> «Первозданная тайга»: новый фотопроект Игоря Шпиленка </h3>
 					<p class="card__description">
@@ -116,7 +123,8 @@
 		</section>
 		<section class="about-author">
 			<div class="about-author__wrapper">
-				<img src="images/avatar.png" alt="Вернуться на главную страницу" class="about-author__photo">
+				<img src=" <%=require('./images/avatar.png') %>" alt="Вернуться на главную страницу"
+					class="about-author__photo">
 				<div class="about-author__container">
 					<h2 class="about-author__subtitle">
 						Об авторе
@@ -140,10 +148,10 @@
 					<a href="#"> Яндекс.Практикум </a>
 				</div>
 				<div class="footer__social">
-					<a class="footer__social_icons" href="https://vk.com/"> <img src="images/gh.svg"
+					<a class="footer__social_icons" href="https://vk.com/"> <img src="<%=require('./images/gh.svg')%>"
 							alt="Вернуться на главную страницу"> </a>
-					<a class="footer__social_icons" href="https://www.facebook.com/"> <img src="images/facebook.svg"
-							alt="Вернуться на главную страницу"> </a>
+					<a class="footer__social_icons" href="https://www.facebook.com/"> <img
+							src="<%=require('./images/facebook.svg')%>" alt="Вернуться на главную страницу"> </a>
 				</div>
 			</div>
 		</footer>

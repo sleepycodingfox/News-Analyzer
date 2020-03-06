@@ -1,18 +1,4 @@
-.about-author__info{
-	
+.about-author__info {
 	margin-top: 24px;
-	font-size: 18px;
+  font-size: 18px;
 }
-
-  @media (max-width: 320px) {
-    .about-author__info{
-	
-
-    }
-  } 
-
-@media (min-width: 321px) and (max-width: 768px) {
-	    .about-author__info{
-
-    }
-} 

@@ -1,16 +1,4 @@
-.about-author__subtitle{
+.about-author__subtitle {
     font-size: 40px;
-	
 }
 
-  @media (max-width: 320px) {
-    .about-author__subtitle{
-	font-size: 30px;
-    }
-  } 
-
-@media (min-width: 321px) and (max-width: 768px) {
-    .about-author__subtitle{
-		font-size: 30px;
-    }
-} 

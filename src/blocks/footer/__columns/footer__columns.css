@@ -1,25 +1,11 @@
 .footer__columns {
-    max-width: 1334;
+    width: calc(100% - 208px);
 	margin: auto;
     display: flex;
     justify-content: space-between; 
-    align-items: center;
-    margin-top: 33px;
     margin-bottom: 26px;
+    padding-top: 30px;
+    padding-bottom: 26px;
 }
 
 
-@media (max-width: 320px) {
-    .footer__columns {
-        max-width: 288px;
-        min-height:224px;
-        flex-wrap: wrap;
-        align-items: flex-start;
- }
-} 
-
-@media (min-width: 321px) and (max-width: 768px) {
- .footer__columns {
-    max-width: 728px;
- }
-} 

@@ -7,21 +7,20 @@
 
 
 
-.footer {
-    background-color: yellow;
-    height: 80px;
-}
+
 
 @media (max-width: 320px) {
-    .footer {
-        max-width: 320px;
-
+    .footer__columns {
+        width: calc(100% - 32px);
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-top: 0px;
  }
 } 
 
 @media (min-width: 321px) and (max-width: 768px) {
- .footer {
-    max-width: 768px;
-
+ .footer__columns {
+    max-width: 728px;
+    width: calc(100% - 80px);
  }
 } 
