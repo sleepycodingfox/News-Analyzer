@@ -1,2 +1,2 @@
-import './index.css';
+import '../blocks/index.css';
 import '../images/favicon.ico';
