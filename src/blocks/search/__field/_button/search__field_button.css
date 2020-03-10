@@ -6,6 +6,19 @@
 	color: #FFFFFF;
 }
 
+.search__field_button:hover {
+    transition: 0.5s ease-in-out;
+    background: #347EFF;
+    
+    
+  }
+
+  .search__field_button:active {
+    background: #2A65CC;
+    cursor: pointer;
+  
+  }
+
 
 @media (max-width: 320px) {
     .search__field_button{
@@ -16,8 +29,3 @@
     }
 } 
 
-@media (min-width: 321px) and (max-width: 768px) {
-    .search__field_button{
-       
-    }
-} 

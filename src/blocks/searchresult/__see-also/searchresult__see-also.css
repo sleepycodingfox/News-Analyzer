@@ -12,6 +12,12 @@
 	 
 }
 
+.searchresult__see-also:hover {
+	background: #e8e8e9;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+
 @media (max-width: 320px) {
      .searchresult__see-also {
 		margin-top: 13px;

@@ -3,6 +3,11 @@
     margin-top: 30px;
 }
 
+.header__menu:hover {
+  cursor: pointer;
+
+}
+
 @media (max-width: 320px) {
     .header__menu{
          margin-top: 16px;
