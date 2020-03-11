@@ -2,13 +2,11 @@
 .footer__social {
     display: flex;
     flex-direction: row;
-    background-color: lightblue;
+    width: 70px;
+    justify-content: space-between;
   }
   
 
-  .footer__social a {
-    margin-right: 28px;
-  }
 
   .footer__social a:last-child {
     margin-right: 0px;

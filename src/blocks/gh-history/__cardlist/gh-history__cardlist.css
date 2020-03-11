@@ -11,15 +11,15 @@
     top: 0;
     z-index: 10;
     cursor: pointer;
-    background-color: peru;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
     }
 
 .prev-link {
     left: 0;
-    background-color: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
     }
 
 .next-link {
@@ -30,10 +30,3 @@
     --swiper-theme-color: black;
     }
 
-.next-link_arrow {
-    background-color: paleturquoise;
-}
-
-.prev-link_arrow {
-    background-color: paleturquoise;
-}

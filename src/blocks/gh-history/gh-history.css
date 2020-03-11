@@ -31,4 +31,12 @@
         margin-top: 19px;
         flex-direction: row;
     }
-} 
+
+    .gh-history__card-name {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) { 
+
+}
