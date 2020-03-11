@@ -16,9 +16,8 @@
 @media (max-width: 320px) {
     .gh-history  {
         max-width: 320px;
-
- }
-} 
+        }
+    } 
 
 @media (min-width: 321px) and (max-width: 768px) {
     .title__wrapper_margin {
@@ -31,5 +30,5 @@
         display: flex;
         margin-top: 19px;
         flex-direction: row;
-     }
+    }
 } 

@@ -20,8 +20,8 @@ var mySwiper = new Swiper('.swiper-container', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.next-link',
-        prevEl: '.prev-link',
+        nextEl: '.next-link_arrow',
+        prevEl: '.prev-link_arrow',
     },
 
 });

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
 	<link rel="shortcut icon" href="<%=require('./images/group.ico')%>" type="image/x-icon">
 </head>
+
 <body>
 	<div class="page">
 		<header class="header_black">
@@ -155,8 +156,14 @@
 						</p>
 					</a>
 				</div>
-				<div class="gh-history__arrow next-link"></div>
-				<div class="gh-history__arrow prev-link"></div>
+				<div class="gh-history__arrow next-link">
+					<img src=" <%=require('./images/sright.png') %>" alt="Вернуться на главную страницу"
+						class="next-link_arrow">
+				</div>
+				<div class="gh-history__arrow prev-link">
+					<img src=" <%=require('./images/sleft.png') %>" alt="Вернуться на главную страницу"
+						class="prev-link_arrow">
+				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 		</section>

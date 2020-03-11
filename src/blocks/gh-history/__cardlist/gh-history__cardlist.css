@@ -1,26 +1,39 @@
 .gh-history__cardlist {
     margin-top: 64px;
     overflow: hidden;
-    height: 400px;
+    height: 360px;
     }
 
 .gh-history__arrow {
     position: absolute;
     width: 70px;
-    height: 300px;
+    height: 288px;
     top: 0;
     z-index: 10;
-    background-position: center;
-    background-repeat: no-repeat;
     cursor: pointer;
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
 .prev-link {
     left: 0;
-    background-image: url('../../../images/slider-control.png');
+    background-color: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
     }
 
 .next-link {
     right: 0;
-    background-image: url('../../../images/sright.png');
     }
+
+.swiper-pagination {
+    --swiper-theme-color: black;
+    }
+
+.next-link_arrow {
+    background-color: paleturquoise;
+}
+
+.prev-link_arrow {
+    background-color: paleturquoise;
+}
