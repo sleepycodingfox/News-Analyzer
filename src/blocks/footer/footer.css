@@ -1,13 +1,13 @@
-
 @import url('../footer/__columns/footer__columns.css');
 @import url('../footer/__columns/__social/footer__social.css');
 @import url('../footer/__columns/__social/_icons/footer__social_icons.css');
 @import url('../footer/__columns/__info/footer__info.css');
 @import url('../footer/__columns/__author/footer__author.css');
 
-
-
-
+.footer {
+    max-width: 1440px;
+    background-color: dimgray;
+}
 
 @media (max-width: 320px) {
     .footer__columns {
@@ -15,12 +15,42 @@
         flex-wrap: wrap;
         align-items: flex-start;
         padding-top: 0px;
- }
-} 
+        }
+    .footer__social {
+        padding: 0;
+        margin-top: 20px; 
+        }
+    .footer__info {
+        flex-direction: column;
+        margin-top: 20px;
+        height: 120px;
+        }
+    .footer__info a {
+        margin-right: 0px;
+        margin-bottom: 15px;
+        }
+    .footer__info a:last-child {  
+        margin-bottom: 0px;
+        }
+    .footer__author {
+        padding: 0;
+        order: 1;
+        margin-top: 20px;
+        }
+    } 
 
 @media (min-width: 321px) and (max-width: 768px) {
- .footer__columns {
-    max-width: 728px;
-    width: calc(100% - 80px);
- }
-} 
+    .footer__columns {
+        max-width: 728px;
+        width: calc(100% - 80px);
+        }
+    .footer__social {
+        padding-right: 20px;
+        }
+    .footer__info a {  
+        margin-right: 25px;  
+        }
+    .footer__author {
+        padding-left: 20px;
+        }
+    } 

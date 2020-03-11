@@ -1,12 +1,17 @@
 import '../blocks/about.css';
 import '../images/group.ico';
 import '../../node_modules/swiper/js/swiper.min.js';
+
 import Swiper from 'swiper';
+import '../../node_modules/swiper/css/swiper.css';
 
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
+    slidesPerView: 3.4,
+    spaceBetween: 16,
+    centeredSlides: true,
 
     // If we need pagination
     pagination: {
@@ -15,13 +20,9 @@ var mySwiper = new Swiper('.swiper-container', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.next-link',
+        prevEl: '.prev-link',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
 });
 
