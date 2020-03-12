@@ -59,3 +59,14 @@
 	}
 } 
 
+@media (min-width: 769px) and (max-width: 1000px) {
+	.about-author__photo {
+		max-width: 324px;
+		max-height: 324px;
+	}
+	.about-author__info {
+		padding: 0 10px;
+	}
+}
+
+
