@@ -1,6 +1,6 @@
 # Diplom.Y.Praktikum2020
 
-##### [Ссылка на проект](...) 
+##### [Ссылка на проект](https://desertoraposa.github.io/Diplom.Y.Praktikum2020/) 
 
 Актуальная версия проекта 0.0.1
 
@@ -43,4 +43,4 @@
 
 ## Как развернуть проект
 
-Достаточно зайти на страницу проекта на github.io: [ссылка на проект](https://desertoraposa.github.io/webpack_new/) 
+Достаточно зайти на страницу проекта на github.io: [ссылка на проект](https://desertoraposa.github.io/Diplom.Y.Praktikum2020/) 
