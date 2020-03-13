@@ -7,22 +7,18 @@
 .analytics {
     max-width: 1440px;
     color: #1A1B22;
-    padding-bottom: 80px;
-    
+    padding-bottom: 80px;  
 }
 
 
 @media (max-width: 320px) {
     .analytics {
         padding-bottom: 40px;
-        
     }
     .analytics__wrap {
         margin: auto;
         padding-top: 0px;
         width: calc(100% - 32px);
-       
-
     }
     .analytics__nav {
         display: none;
@@ -31,8 +27,6 @@
         margin-top: 16px;
         font-size: 30px;
     }
-    .analytics__text {
-    }
 } 
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -40,17 +34,10 @@
         padding-bottom: 40px;
     }
     .analytics__wrap {
-        width: 688px;
-    }
-    .analytics__nav {
-  
+        width: calc(100% - 20px);
     }
     .analytics__title {
         font-size: 32px;
-        margin-top: 64px;
-       
-    }
-    .analytics__text {
-       
+        margin-top: 64px; 
     }
 } 
