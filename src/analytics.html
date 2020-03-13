@@ -13,20 +13,20 @@
 <body>
 	<div class="page">
 		<header class="header_black">
-			<div class="header__content">
-				<div class="header__logo">
+			<nav class="header__content">
+				<h3 class="header__logo">
 					NewsAnalyzer
-				</div>
+				</h3>
 				<div class="header__container">
 					<a class="header__menu  header__menu_blackborder" href="index.html"> Главная </a>
 					<a class="header__menu" href="about.html"> О проекте </a>
 				</div>
-			</div>
+			</nav>
 		</header>
 		<section class="analytics">
 			<div class="analytics__wrap">
 				<div class="analytics__nav" href="index.html">
-					<a href = "index.html" > Главная</a> <span>/ Аналитика</span>
+					<a href="index.html"> Главная</a> <span>/ Аналитика</span>
 				</div>
 				<h2 class="analytics__title">
 					Вы спросили: «Путешествия»
@@ -44,16 +44,16 @@
 		</section>
 		<section class="graph">
 			<div class="graph__wrap">
-				<div class="graph__title">
+				<h3 class="graph__title">
 					Аналитика по дням
-				</div>
+				</h3>
 				<div class="graph__container">
-					<div class="graph__cell">
+					<p class="graph__cell">
 						Дата <br> (август)
-					</div>
-					<div class="graph__cell">
+					</p>
+					<p class="graph__cell">
 						Кол-во упоминаний
-					</div>
+					</p>
 				</div>
 				<div class="graph__container_counterwrap">
 					<div class="graph__cell_counter">
@@ -72,7 +72,7 @@
 						100
 					</div>
 				</div>
-				<div class="graph__histogram">
+				<form class="graph__histogram">
 					<div class="graph__wrapper">
 						<div class="graph__days"> 19, пн</div>
 						<div class="graph__bar__wrapper">
@@ -115,19 +115,25 @@
 							<div class="graph__bar bar_demo_7"> 34 </div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</section>
 		<footer class="footer">
 			<div class="footer__columns">
-				<div class="footer__author">
-					&copy; 2019 Supersite
-				</div>
-				<div class="footer__info">
-					<a href="index.html"> Главная </a>
-					<a href="about.html"> О проекте </a>
-					<a href="https://praktikum.yandex.ru/" target="_blank"> Яндекс.Практикум </a>
-				</div>
+				<p class="footer__author">
+					&copy; 2020 Rezeda Khairullina
+				</p>
+				<ul class="footer__info">
+					<li>
+						<a href="index.html"> Главная </a>
+					</li>
+					<li>
+						<a href="about.html"> О проекте </a>
+					</li>
+					<li>
+						<a href="https://praktikum.yandex.ru/" target="_blank"> Яндекс.Практикум </a>
+					</li>
+				</ul>
 				<div class="footer__social">
 					<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img
 							src="<%=require('./images/gh.svg')%>" alt="Вернуться на главную страницу"> </a>
