@@ -2,6 +2,7 @@
     max-width: 608px;
     font-size: 60px;
     margin-top: 80px;
+    font-family: 'RobotoSlab';
 }
 
 @media (max-width: 320px) {
