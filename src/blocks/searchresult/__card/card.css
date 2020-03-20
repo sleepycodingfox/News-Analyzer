@@ -4,6 +4,7 @@
 	border-radius: 16px;
 	background: #FFFFFF;
 	color: #1A1B22;
+	height: 576px;
 
 }
 
@@ -14,5 +15,7 @@
 } 
 
 @media (min-width: 321px) and (max-width: 768px) {
-
+	.card {
+		height: 430px;
+	}
 } 

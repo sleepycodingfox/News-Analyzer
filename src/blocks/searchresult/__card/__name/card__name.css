@@ -5,8 +5,12 @@
 	margin-top:12px;
 	font-size: 26px;
 	font-family: RobotoSlab, serif;
-
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 
 
 .card__name_width{
