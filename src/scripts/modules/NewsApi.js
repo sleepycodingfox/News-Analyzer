@@ -1,5 +1,9 @@
 export class NewsApi {
-    constructor() {}
+    constructor() {
+        this.preloader = document.querySelector('.preloader');
+        this.resultSection = document.querySelector('.searchresult');
+        this.noResult = document.querySelector('.noresult');
+    }
 
     getNews(query, callback) {
         var url = 'http://newsapi.org/v2/everything?' +
@@ -12,6 +16,9 @@ export class NewsApi {
         var req = new Request(url);
 
         console.log('show loader');
+        this.preloader.style.display = "flex";
+        this.resultSection.style.display = "none"; 
+        this.noResult.style.display = "none";
 
         fetch(req)
         .then((response) => {
@@ -19,6 +26,7 @@ export class NewsApi {
         })
         .then((result) => {
             console.log('hide loader');
+            this.preloader.style.display = "none";
             callback(result);
         });
     }

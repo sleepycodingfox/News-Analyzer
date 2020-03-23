@@ -11,14 +11,15 @@
 }
 
 @media (max-width: 320px) {
-	.search{
-		
-	}
-    
-} 
+	.errorwrap {
+		width: calc(100% - 160px);
+		}
+	} 
 
-@media (min-width: 320px) and (max-width: 768px) {
-		.search{
-		
-	}
-} 
+@media (min-width: 320px) and (max-width: 769px) {
+	.errorwrap {
+		margin-top: 10px;
+		max-width: 420px;
+		border-radius: 100px;
+		}
+	} 

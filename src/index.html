@@ -33,10 +33,12 @@
 					Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
 				</p>
 				<form class="search__field">
-					<input type="text" name="name" class="search__field_input" placeholder="Природа" minlength='2'
-						maxlength="20" required>
-					<button class="search__field_button"> Искать </button>
+					<input type="text" name="name" class="search__field_input" placeholder="Природа">
+					<button class="search__field_button "> Искать </button>
 				</form>
+				<div class="error">
+					<span class="error_text"></span>
+				</div>
 			</section>
 		</div>
 		<section class="preloader" style="display: none;">
@@ -48,14 +50,14 @@
 			<h3 class="noresult__message">Ничего не найдено</h3>
 			<p class="noresult__messageWhy">К сожалению по вашему запросу ничего не найдено.</p>
 		</section>
-		<section class="searchresult">
+		<section class="searchresult searchresult_hide">
 			<div class="title__wrapper ">
 				<h2 class="subtitle"> Результаты поиска </h2>
 				<a class="infolink" href="analytics.html"> Посмотреть аналитику <img
 						src="<%=require('./images/arrow.svg') %>" alt="Вернуться на главную страницу"> </a>
 			</div>
 			<div class="cardlist">
-			<!--	<a class="card" href="#">
+				<!--	<a class="card" href="#">
 					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
 						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
