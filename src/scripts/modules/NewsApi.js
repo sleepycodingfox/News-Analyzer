@@ -26,7 +26,7 @@ export class NewsApi {
 
     getNews(query, callback, error_callback) {
         const dates = this.constructDates();
-        const url = 'http://newsapi.org/v2/everything?' +
+        const url = 'https://newsapi.org/v2/everything?' +
             `q=${query}&` +
             `from=${dates.from}&` + 
             `to=${dates.to}&` +
