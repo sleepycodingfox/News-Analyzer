@@ -1,15 +1,13 @@
 
 .searchresult__see-also {
-	 max-width: 288px;
-	 height: 64px;
-	 margin: auto;
-	 width: 100%;
-	 margin-top: 64px;
-	 margin-bottom: 80px;
-	 background: #FFFFFF;
-	 border-radius: 80px;
-	 font-size: 18px;
-	 
+    max-width: 288px;
+    height: 64px;
+    margin: auto;
+    width: 100%;
+    margin-top: 64px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    font-size: 18px;
 }
 
 .searchresult__see-also:hover {

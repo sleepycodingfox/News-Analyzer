@@ -10,6 +10,7 @@ export class SearchInput {
 
             if (this.validate()) { //если валидация прошла, то в функцию передается содержимое this.input
                 callback(this.input.value);
+                localStorage.setItem('userQuery', this.input.value);
             }
         });
     }
@@ -26,6 +27,3 @@ export class SearchInput {
     }
 
 }
-
-
-

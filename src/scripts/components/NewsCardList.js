@@ -2,16 +2,14 @@ import { NewsCard } from './NewsCard'
 
 export class NewsCardList {
     constructor() {
-        this.clear();
         this.cardList = document.querySelector('.cardlist');
 
-        this.resultSection = document.querySelector('.searchresult');
-        this.noResult = document.querySelector('.noresult');
-
-        const button = document.querySelector('.searchresult__see-also');
-        button.addEventListener('click', (event) => {
+        this.seeAlsoButton = document.querySelector('.searchresult__see-also');
+        this.seeAlsoButton.addEventListener('click', (event) => {
             this.renderThreeCards();
         });
+
+        this.clear();
     }
 
     clear() {
@@ -21,6 +19,8 @@ export class NewsCardList {
         document.querySelectorAll('.card').forEach((cardNode) => {
             cardNode.parentNode.removeChild(cardNode);
         });
+
+        this.seeAlsoButton.style.display = "block";
     }
 
     setData(data) {
@@ -29,22 +29,16 @@ export class NewsCardList {
     }
 
     renderThreeCards() {
-        //console.log(this.cardsData);
-        if (this.cardsData.articles.length === 0) {
-            console.log('nothing!');
-            this.noResult.style.display = "flex";
-            this.resultSection.style.display = "none"; 
-        } else {
-            
-            this.resultSection.style.display = "flex";
-            for (let i = this.counter; i < this.counter + 3; i++) {
-                const cardData = this.cardsData.articles[i];
-                let card = new NewsCard(cardData);
-                this.cardList.appendChild(card.html);
-            }
-            this.counter += 3;
-            console.log('GOT IT!');
-        }
+        for (let i = this.counter; i < this.counter + 3; i++) {
+            const cardData = this.cardsData.articles[i];
+            let card = new NewsCard(cardData);
+            this.cardList.appendChild(card.html);
 
+            if (i == this.cardsData.articles.length - 1) {
+                this.seeAlsoButton.style.display = "none";
+                break;
+            }
+        }
+        this.counter += 3;
     }
 }

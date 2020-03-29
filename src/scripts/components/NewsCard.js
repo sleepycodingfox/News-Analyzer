@@ -1,3 +1,5 @@
+import { prepareDate } from '../modules/Utilities';
+
 export class NewsCard {
     constructor(data) {
         this.img = data.urlToImage;
@@ -13,6 +15,7 @@ export class NewsCard {
     createElement() { //метод создания карточки DOM
         const cardDiv = document.createElement('a');
         cardDiv.href = this.link;
+        cardDiv.target="_blank";
         cardDiv.classList.add('card');
 
         const cardImage = document.createElement('div');
@@ -22,7 +25,7 @@ export class NewsCard {
 
         const cardDate = document.createElement('div');
         cardDate.classList.add('card__date');
-        cardDate.textContent = this.date;
+        cardDate.textContent = prepareDate(new Date(this.date));
         cardDiv.appendChild(cardDate);
 
         const cardTitle = document.createElement('h3');

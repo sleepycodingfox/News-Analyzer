@@ -1,33 +1,49 @@
 export class NewsApi {
     constructor() {
-        this.preloader = document.querySelector('.preloader');
-        this.resultSection = document.querySelector('.searchresult');
-        this.noResult = document.querySelector('.noresult');
     }
 
-    getNews(query, callback) {
-        var url = 'http://newsapi.org/v2/everything?' +
+    prepareDate(date) { //подготавливаю формат даты
+      let year = date.getFullYear();
+
+      const rawMonth = date.getMonth() + 1;
+      let month = rawMonth <= 9 ? '0' + rawMonth : rawMonth;
+
+      const rawDay = date.getDate();
+      let day = rawDay <= 9 ? '0' + rawDay : rawDay;
+
+      return `${year}-${month}-${day}`;
+    }
+
+    constructDates() { 
+        const now = new Date();
+        const weekAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);//семь дней назад от текущей даты
+
+        return {
+          to: this.prepareDate(now),
+          from: this.prepareDate(weekAgo)
+        }
+    }
+
+    getNews(query, callback, error_callback) {
+        const dates = this.constructDates();
+        const url = 'http://newsapi.org/v2/everything?' +
             `q=${query}&` +
-            'from=2020-03-16&' +
+            `from=${dates.from}&` + 
+            `to=${dates.to}&` +
             'sortBy=popularity&' +
             'pageSize=100&' +
             'apiKey=a260595d13c046ae82e6e897a1a11e1e';
 
-        var req = new Request(url);
-
-        console.log('show loader');
-        this.preloader.style.display = "flex";
-        this.resultSection.style.display = "none"; 
-        this.noResult.style.display = "none";
-
-        fetch(req)
-        .then((response) => {
+        const request = new Request(url);
+        fetch(request)
+          .then((response) => {
             return response.json();
-        })
-        .then((result) => {
-            console.log('hide loader');
-            this.preloader.style.display = "none";
+          })
+          .then((result) => {
             callback(result);
-        });
+          })
+          .catch(() => {
+            error_callback();
+          });
     }
 }
