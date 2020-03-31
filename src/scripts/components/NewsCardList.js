@@ -31,7 +31,7 @@ export class NewsCardList {
     renderThreeCards() {
         for (let i = this.counter; i < this.counter + 3; i++) {
             const cardData = this.cardsData.articles[i];
-            let card = new NewsCard(cardData);
+            const card = new NewsCard(cardData);
             this.cardList.appendChild(card.html);
 
             if (i == this.cardsData.articles.length - 1) {

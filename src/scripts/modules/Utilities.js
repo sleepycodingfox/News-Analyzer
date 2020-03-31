@@ -1,5 +1,5 @@
 export function prepareDate(date) { //подготавливаю формат даты
-    let year = date.getFullYear();
+    const year = date.getFullYear();
 
     const monthes = [
         'января',

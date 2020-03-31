@@ -13,7 +13,7 @@ export class CommitCardList {
     renderCards() {
         for (let i = 0; i < 20; i++) {
             const cardData = this.cardsData[i];
-            let card = new CommitCard(cardData);
+            const card = new CommitCard(cardData);
             this.cardList.appendChild(card.html);
            // console.log(this.cardList);
         }

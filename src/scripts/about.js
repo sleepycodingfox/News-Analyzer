@@ -18,7 +18,7 @@ apiGitHub.getCommits()
         commitCardList.setData(result);
         commitCardList.renderCards();
 
-        var mySwiper = new Swiper('.swiper-container', {
+        const mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
            //observer: true,
             breakpoints: {

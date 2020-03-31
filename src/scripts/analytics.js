@@ -79,7 +79,7 @@ const constructAnalytics = (resultsData) => {
   console.log(dates);
   console.log(dateLabels);
 
-  for (var i = 0; i < 7; i++) {
+  for (let i = 0; i < 7; i++) {
     const bar = document.querySelector('.bar_demo_' + (i + 1));
     bar.style.width = datesCounters[i] * 10 + "px";
     bar.textContent = datesCounters[i];
