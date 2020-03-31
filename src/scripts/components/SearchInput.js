@@ -16,7 +16,7 @@ export class SearchInput {
     }
 
     validate() {
-        let error_text = '';
+        let errText = '';
         if (this.input.value.length === 0) {
             this.errorText.textContent = "Нужно ввести ключевое слово";
             return false;
