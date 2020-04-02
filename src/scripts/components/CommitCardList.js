@@ -1,5 +1,5 @@
 import { CommitCard } from './CommitCard'
-
+import { lastCommitsCount } from '../utils/Constants';
 
 export class CommitCardList {
     constructor() {
@@ -11,7 +11,7 @@ export class CommitCardList {
     }
 
     renderCards() {
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < lastCommitsCount; i++) {
             const cardData = this.cardsData[i];
             const card = new CommitCard(cardData);
             this.cardList.appendChild(card.html);

@@ -4,6 +4,7 @@ import '../blocks/analytics.css';
 import '../images/group03.ico';
 
 import { SearchInput } from './components/SearchInput';
+import { mSecondsInDay, analyticsGraphDaysCount } from './utils/Constants';
 
 const constructHeaders = (resultsData, userQuery) => {
   const analyticsTitle = document.querySelector('.analytics__title');
@@ -48,8 +49,8 @@ const constructAnalytics = (resultsData) => {
   const monthName = getMonthFromDate(new Date(now));
   document.querySelector('.month_label').textContent = monthName;
 
-  for (let i = 0; i < 7; i++) {
-    const milliseconds = now - i * 24 * 60 * 60 * 1000;
+  for (let i = 0; i < analyticsGraphDaysCount; i++) {
+    const milliseconds = now - i * mSecondsInDay;
     const date = new Date(milliseconds);
     
     const dateStr = prepareDate(date);

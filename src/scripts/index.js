@@ -10,7 +10,21 @@ const newsCardList = new NewsCardList();
 const newsAPI = new NewsApi();
 const uiManager = new UIManager();
 
-const searchInput = new SearchInput((query) => { //передаю функцию callback из конструктора, проходит валидация
+// проверка,  есть ли данные в LocalStorage и показываем их, если они там есть
+const savedQuery = localStorage.getItem('userQuery');
+const savedResults = JSON.parse(localStorage.getItem('userQueryResults'));
+let searchInputInitialValue = '';
+
+if (savedQuery && savedResults) {
+    uiManager.showResults();
+    newsCardList.setData(savedResults);
+    newsCardList.renderThreeCards();
+
+    searchInputInitialValue = savedQuery;
+}
+
+
+const searchInput = new SearchInput(searchInputInitialValue, (query) => { //передаю функцию callback из конструктора, проходит валидация
     uiManager.showLoader();
     newsAPI.getNews(query, (newsData) => { // newsData объект с массивами, получаю в рез-те fetch запроса, в query -запрос
         // check newsData len
@@ -21,6 +35,8 @@ const searchInput = new SearchInput((query) => { //передаю функцию
             uiManager.showResults();
             newsCardList.setData(newsData);
             newsCardList.renderThreeCards();
+
+            localStorage.setItem('userQuery', query);
             localStorage.setItem('userQueryResults',JSON.stringify(newsData));
         }
     }, () => {

@@ -1,18 +1,17 @@
 import { NewsCard } from './NewsCard'
+import { moreCardsCount } from '../utils/Constants';
 
 export class NewsCardList {
     constructor() {
         this.cardList = document.querySelector('.cardlist');
 
         this.seeAlsoButton = document.querySelector('.searchresult__see-also');
-        this.seeAlsoButton.addEventListener('click', (event) => {
-            this.renderThreeCards();
-        });
+        this.seeAlsoButton.addEventListener('click', this.renderThreeCards.bind(this));
 
-        this.clear();
+        this._clear();
     }
 
-    clear() { 
+    _clear() { 
         this.cardsData = [];
         this.counter = 0;
 
@@ -24,12 +23,12 @@ export class NewsCardList {
     }
 
     setData(data) {
-        this.clear();
+        this._clear();
         this.cardsData = data;
     }
 
     renderThreeCards() {
-        for (let i = this.counter; i < this.counter + 3; i++) {
+        for (let i = this.counter; i < this.counter + moreCardsCount; i++) {
             const cardData = this.cardsData.articles[i];
             const card = new NewsCard(cardData);
             this.cardList.appendChild(card.html);
@@ -39,6 +38,6 @@ export class NewsCardList {
                 break;
             }
         }
-        this.counter += 3;
+        this.counter += moreCardsCount;
     }
 }

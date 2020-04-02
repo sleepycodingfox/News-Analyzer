@@ -1,3 +1,5 @@
+import { mSecondsInDay, newsIntervalInDays } from '../utils/Constants';
+
 export class NewsApi {
     constructor() {
     }
@@ -16,7 +18,7 @@ export class NewsApi {
 
     constructDates() { 
         const now = new Date();
-        const weekAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);//семь дней назад от текущей даты
+        const weekAgo = new Date(now - newsIntervalInDays * mSecondsInDay);//семь дней назад от текущей даты
 
         return {
           to: this._prepareDate(now),
@@ -24,7 +26,7 @@ export class NewsApi {
         }
     }
 
-    getNews(query, callback, error_callback) {
+    getNews(query, callback, errorCallback) {
         const dates = this.constructDates();
         const url = 'https://newsapi.org/v2/everything?' +
             `q=${query}&` +
@@ -40,10 +42,14 @@ export class NewsApi {
             return response.json();
           })
           .then((result) => {
-            callback(result);
+            if (result.status != 'ok') {
+              errorCallback();
+            } else {
+              callback(result);
+            }
           })
           .catch(() => {
-            error_callback();
+            errorCallback();
           });
     }
 }
