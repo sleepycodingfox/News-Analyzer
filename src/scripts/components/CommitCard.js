@@ -1,4 +1,4 @@
-import { prepareDate } from '../modules/Utilities';
+import { prepareDate } from '../utils/Utilities';
 
 export class CommitCard {
     constructor(data) {

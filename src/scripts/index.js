@@ -4,7 +4,7 @@ import '../images/favicon.ico';
 import { NewsApi } from './modules/NewsApi';
 import { NewsCardList } from './components/NewsCardList';
 import { SearchInput } from './components/SearchInput';
-import { UIManager } from './modules/UIManager';
+import { UIManager } from './utils/UIManager';
 
 const newsCardList = new NewsCardList();
 const newsAPI = new NewsApi();

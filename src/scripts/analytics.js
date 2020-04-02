@@ -1,4 +1,4 @@
-import { prepareDate, prepareDateForGraph, getMonthFromDate } from './modules/Utilities';
+import { prepareDate, prepareDateForGraph, getMonthFromDate } from './utils/Utilities';
 
 import '../blocks/analytics.css';
 import '../images/group03.ico';
