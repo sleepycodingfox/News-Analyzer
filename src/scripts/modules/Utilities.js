@@ -55,3 +55,4 @@ export function getMonthFromDate(date) { //подготавливаю форма
     const month = date.getMonth(); // 0 - 11
     return `${monthes[month]}`;
 }
+

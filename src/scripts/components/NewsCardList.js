@@ -12,7 +12,7 @@ export class NewsCardList {
         this.clear();
     }
 
-    clear() {
+    clear() { 
         this.cardsData = [];
         this.counter = 0;
 

@@ -2,7 +2,7 @@ export class NewsApi {
     constructor() {
     }
 
-    prepareDate(date) { //подготавливаю формат даты
+    _prepareDate(date) { //подготавливаю формат даты
       let year = date.getFullYear();
 
       const rawMonth = date.getMonth() + 1;
@@ -19,8 +19,8 @@ export class NewsApi {
         const weekAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);//семь дней назад от текущей даты
 
         return {
-          to: this.prepareDate(now),
-          from: this.prepareDate(weekAgo)
+          to: this._prepareDate(now),
+          from: this._prepareDate(weekAgo)
         }
     }
 
