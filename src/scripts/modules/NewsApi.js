@@ -26,7 +26,7 @@ export class NewsApi {
         }
     }
 
-    getNews(query, callback, errorCallback) {
+    getNews(query) {
         const dates = this.constructDates();
         const url = 'https://newsapi.org/v2/everything?' +
             `q=${query}&` +
@@ -36,20 +36,13 @@ export class NewsApi {
             'pageSize=100&' +
             'apiKey=a260595d13c046ae82e6e897a1a11e1e';
 
-        const request = new Request(url);
-        fetch(request)
+        const request = fetch(url)
           .then((response) => {
-            return response.json();
-          })
-          .then((result) => {
-            if (result.status != 'ok') {
-              errorCallback();
-            } else {
-              callback(result);
+            if (response.ok) {
+              return Promise.resolve(response.json());
             }
+            return Promise.reject(`Что-то пошло не так: ${response.status}`);
           })
-          .catch(() => {
-            errorCallback();
-          });
+        return request;
     }
 }

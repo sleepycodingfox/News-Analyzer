@@ -16,6 +16,7 @@ export class SearchInput {
 
         if (this.validate()) { //если валидация прошла, то в функцию передается содержимое this.input
             this.callback(this.input.value);
+            console.log(this.callback);
         }
     }
 

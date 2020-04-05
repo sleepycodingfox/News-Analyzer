@@ -7,8 +7,6 @@ export class NewsCardList {
 
         this.seeAlsoButton = document.querySelector('.searchresult__see-also');
         this.seeAlsoButton.addEventListener('click', this.renderThreeCards.bind(this));
-
-        this._clear();
     }
 
     _clear() { 

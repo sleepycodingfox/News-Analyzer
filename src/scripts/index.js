@@ -26,21 +26,23 @@ if (savedQuery && savedResults) {
 
 const searchInput = new SearchInput(searchInputInitialValue, (query) => { //передаю функцию callback из конструктора, проходит валидация
     uiManager.showLoader();
-    newsAPI.getNews(query, (newsData) => { // newsData объект с массивами, получаю в рез-те fetch запроса, в query -запрос
-        // check newsData len
-        uiManager.hideLoader();
-        if (newsData.articles.length == 0) {
-            uiManager.showNoResults();
-        } else {
-            uiManager.showResults();
-            newsCardList.setData(newsData);
-            newsCardList.renderThreeCards();
 
-            localStorage.setItem('userQuery', query);
-            localStorage.setItem('userQueryResults',JSON.stringify(newsData));
-        }
-    }, () => {
-        uiManager.hideLoader();
-        uiManager.showNoResults("Во время запроса произошла ошибка");
-    });
+    newsAPI.getNews(query)
+        .then(newsData => {
+            uiManager.hideLoader();
+            if (newsData.articles.length == 0) {
+                uiManager.showNoResults();
+            } else {
+                uiManager.showResults();
+                newsCardList.setData(newsData);
+                newsCardList.renderThreeCards();
+
+                localStorage.setItem('userQuery', query);
+                localStorage.setItem('userQueryResults',JSON.stringify(newsData));
+            }
+        })
+        .catch(err => {
+            uiManager.hideLoader();
+            uiManager.showNoResults("Во время запроса произошла ошибка");
+        })
 });
