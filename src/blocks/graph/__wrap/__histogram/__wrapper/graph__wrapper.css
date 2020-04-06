@@ -1,8 +1,0 @@
-.graph__wrapper {
-    display: flex;
-    margin-bottom: 56px;
-}
-
-.graph__wrapper:last-child {
-    margin-bottom: 0;
-}
