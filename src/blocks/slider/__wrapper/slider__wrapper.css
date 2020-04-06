@@ -1,0 +1,9 @@
+.slider__wrapper {
+  padding-bottom: 70px;
+  background-color: #F5F6F7;
+}
+@media (max-width: 768px) {
+  .slider__wrapper {
+    padding-bottom: 30px;
+  }
+}

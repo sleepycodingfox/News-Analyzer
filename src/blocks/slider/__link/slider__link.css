@@ -1,0 +1,11 @@
+.slider__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+@media (max-width: 600px) {
+  .slider__link {
+    display: none;
+  }
+}

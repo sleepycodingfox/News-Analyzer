@@ -1,0 +1,17 @@
+.slider__block {
+  padding: 40px 104px 30px 110px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .slider__block {
+    padding: 20px 60px 10px 40px; 
+  }
+}
+@media (max-width: 600px) {
+  .slider__block {
+      padding: 16px;
+  }
+
+}

@@ -1,0 +1,13 @@
+.slider__slide {
+  max-width: 400px;
+  max-height: 288px;
+  background-color: #FFFFFF;
+  margin-right: 15px;
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  .slider__slide {
+    width: 336px;
+    height: 242px;
+  }
+}

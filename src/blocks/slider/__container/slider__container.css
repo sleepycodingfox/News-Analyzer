@@ -1,0 +1,15 @@
+.slider__container {
+  padding: 0 100px;
+  max-width: 1440px;  
+}
+@media (max-width: 768px) {
+  .slider__container {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider__container {
+    padding: 0;
+  }
+}
