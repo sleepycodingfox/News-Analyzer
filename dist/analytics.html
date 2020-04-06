@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Analytics</title>
-	<link rel="stylesheet" href="styles/style.e80890c47ac7f41a2bce.css">
+	<link rel="stylesheet" href="styles/style.b4095ae8b0fa5ad48c88.css">
 	<link rel="shortcut icon" href="./images/group03.ico" type="image/x-icon">
 
 </head>
@@ -13,47 +13,47 @@
 <body>
 	<div class="page">
 		<header class="header_black">
-			<div class="header__content">
-				<div class="header__logo">
+			<nav class="header__content">
+				<h3 class="header__logo">
 					NewsAnalyzer
-				</div>
+				</h3>
 				<div class="header__container">
 					<a class="header__menu  header__menu_blackborder" href="index.html"> Главная </a>
 					<a class="header__menu" href="about.html"> О проекте </a>
 				</div>
-			</div>
+			</nav>
 		</header>
 		<section class="analytics">
 			<div class="analytics__wrap">
 				<div class="analytics__nav" href="index.html">
-					<a href = "index.html" > Главная</a> <span>/ Аналитика</span>
+					<a href="index.html"> Главная</a> <span>/ Аналитика</span>
 				</div>
 				<h2 class="analytics__title">
 					Вы спросили: «Путешествия»
 				</h2>
 				<p class="analytics__text">
 					Новостей за неделю:
-					<span> 34 324 </span>
+					<span>0</span>
 
 				</p>
-				<p class="analytics__text">
+				<p class="analytics__text analytics__text_mention">
 					Упоминаний в заголовках:
-					<span>235</span>
+					<span>0</span>
 				</p>
 			</div>
 		</section>
 		<section class="graph">
 			<div class="graph__wrap">
-				<div class="graph__title">
+				<h3 class="graph__title">
 					Аналитика по дням
-				</div>
+				</h3>
 				<div class="graph__container">
-					<div class="graph__cell">
-						Дата <br> (август)
-					</div>
-					<div class="graph__cell">
+					<p class="graph__cell">
+						Дата <br> (<span class="month_label">август</span>)
+					</p>
+					<p class="graph__cell">
 						Кол-во упоминаний
-					</div>
+					</p>
 				</div>
 				<div class="graph__container_counterwrap">
 					<div class="graph__cell_counter">
@@ -72,62 +72,68 @@
 						100
 					</div>
 				</div>
-				<div class="graph__histogram">
+				<form class="graph__histogram">
 					<div class="graph__wrapper">
 						<div class="graph__days"> 19, пн</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_1"> 15 </div>
+							<div class="graph__bar bar_demo_1"> 0 </div>
 						</div>
 					</div>
 					<div class="graph__wrapper">
 						<div class="graph__days"> 20, вт</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_2"> 18 </div>
+							<div class="graph__bar bar_demo_2"> 0 </div>
 						</div>
 					</div>
 					<div class="graph__wrapper">
 						<div class="graph__days"> 21, ср</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_3"> 11 </div>
+							<div class="graph__bar bar_demo_3"> 0 </div>
 						</div>
 					</div>
 					<div class="graph__wrapper">
 						<div class="graph__days"> 22, чт</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_4"> 39 </div>
+							<div class="graph__bar bar_demo_4"> 0 </div>
 						</div>
 					</div>
 					<div class="graph__wrapper">
 						<div class="graph__days"> 23, пт</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_5"> 45 </div>
+							<div class="graph__bar bar_demo_5"> 0 </div>
 						</div>
 					</div>
 					<div class="graph__wrapper">
 						<div class="graph__days"> 24, сб</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_6"> 73 </div>
+							<div class="graph__bar bar_demo_6"> 0 </div>
 						</div>
 					</div>
 					<div class="graph__wrapper">
 						<div class="graph__days"> 25, вс</div>
 						<div class="graph__bar__wrapper">
-							<div class="graph__bar bar_demo_7"> 34 </div>
+							<div class="graph__bar bar_demo_7"> 0 </div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</section>
 		<footer class="footer">
 			<div class="footer__columns">
-				<div class="footer__author">
-					&copy; 2019 Supersite
-				</div>
-				<div class="footer__info">
-					<a href="index.html"> Главная </a>
-					<a href="about.html"> О проекте </a>
-					<a href="https://praktikum.yandex.ru/" target="_blank"> Яндекс.Практикум </a>
-				</div>
+				<p class="footer__author">
+					&copy; 2020 Rezeda Khairullina
+				</p>
+				<ul class="footer__info">
+					<li>
+						<a href="index.html"> Главная </a>
+					</li>
+					<li>
+						<a href="about.html"> О проекте </a>
+					</li>
+					<li>
+						<a href="https://praktikum.yandex.ru/" target="_blank"> Яндекс.Практикум </a>
+					</li>
+				</ul>
 				<div class="footer__social">
 					<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img
 							src="./images/gh.svg" alt="Вернуться на главную страницу"> </a>
@@ -138,7 +144,7 @@
 		</footer>
 
 	</div>
-	<script src="analytics.76677ed37b6346e61180.js"></script>
+	<script src="analytics.4124d2556982a784f54b.js"></script>
 </body>
 
 </html>

@@ -33,10 +33,12 @@
 					Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
 				</p>
 				<form class="search__field">
-					<input type="text" name="name" class="search__field_input" placeholder="Природа" minlength='2'
-						maxlength="20" required>
-					<button class="search__field_button"> Искать </button>
+					<input type="text" name="name" class="search__field_input" placeholder="Природа">
+					<button class="search__field_button" > Искать </button>
 				</form>
+				<div class="error">
+					<span class="error_text"></span>
+				</div>
 			</section>
 		</div>
 		<section class="preloader" style="display: none;">
@@ -48,14 +50,14 @@
 			<h3 class="noresult__message">Ничего не найдено</h3>
 			<p class="noresult__messageWhy">К сожалению по вашему запросу ничего не найдено.</p>
 		</section>
-		<section class="searchresult">
+		<section class="searchresult searchresult_hide">
 			<div class="title__wrapper ">
 				<h2 class="subtitle"> Результаты поиска </h2>
 				<a class="infolink" href="analytics.html"> Посмотреть аналитику <img
 						src="<%=require('./images/arrow.svg') %>" alt="Вернуться на главную страницу"> </a>
 			</div>
 			<div class="cardlist">
-				<a class="card" href="#">
+				<!--	<a class="card" href="#">
 					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
 						class="card__image">
 					<div class="card__date"> 2 августа, 2019 </div>
@@ -66,63 +68,7 @@
 					</p>
 					<div class="card__source"> Лента.ру </div>
 				</a>
-				<a class="card" href="#">
-					<img src="<%=require('./images/image2.png') %>" alt="Вернуться на главную страницу"
-						class="card__image">
-					<div class="card__date"> 2 августа, 2019 </div>
-					<h3 class="card__name"> Лесные огоньки: история одной фотографии </h3>
-					<p class="card__description">
-						Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
-						ускользающую красоту одного
-						из местных чудес природы.
-					</p>
-					<div class="card__source"> Медуза </div>
-				</a>
-				<a class="card" href="#">
-					<img src="<%=require('./images/image3.png') %>" alt="Вернуться на главную страницу"
-						class="card__image">
-					<div class="card__date"> 2 августа, 2019 </div>
-					<h3 class="card__name"> «Первозданная тайга»: новый фотопроект Игоря Шпиленка </h3>
-					<p class="card__description">
-						Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их
-						сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-					</p>
-					<div class="card__source"> Риа </div>
-				</a>
-				<a class="card" href="#" style="display:none">
-					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
-						class="card__image">
-					<div class="card__date"> 2 августа, 2019 </div>
-					<h3 class="card__name"> Национальное достояние – парки </h3>
-					<p class="card__description">
-						В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-						национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-					</p>
-					<div class="card__source"> Лента.ру </div>
-				</a>
-				<a class="card" href="#" style="display:none">
-					<img src="<%=require('./images/image2.png') %>" alt="Вернуться на главную страницу"
-						class="card__image">
-					<div class="card__date"> 2 августа, 2019 </div>
-					<h3 class="card__name"> Лесные огоньки: история одной фотографии </h3>
-					<p class="card__description">
-						Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
-						ускользающую красоту одного
-						из местных чудес природы.
-					</p>
-					<div class="card__source"> Медуза </div>
-				</a>
-				<a class="card" href="#" style="display:none">
-					<img src="<%=require('./images/image3.png') %>" alt="Вернуться на главную страницу"
-						class="card__image">
-					<div class="card__date"> 2 августа, 2019 </div>
-					<h3 class="card__name"> «Первозданная тайга»: новый фотопроект Игоря Шпиленка </h3>
-					<p class="card__description">
-						Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их
-						сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
-					</p>
-					<div class="card__source"> Риа </div>
-				</a>
+				-->
 			</div>
 			<button class="searchresult__see-also" href="#">
 				Показать еще
