@@ -1,0 +1,9 @@
+.gh-history__card {
+	border-radius: 16px;
+	color: #1A1B22;
+	background: #FFFFFF;
+}
+
+.swiper-slide {
+	max-height: 288px;
+}

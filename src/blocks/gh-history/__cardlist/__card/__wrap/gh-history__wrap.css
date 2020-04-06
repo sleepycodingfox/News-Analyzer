@@ -1,0 +1,7 @@
+.gh-history__wrap {
+   padding: 0 24;
+   margin: auto;
+   display: flex;
+   margin-top: 16px;
+   flex-direction: row;
+}

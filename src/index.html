@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Author" content="Хайруллина Резеда">
+	<title>DIPLOMA</title>
+	<link rel="shortcut icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
+
+</head>
+
+<body>
+	<div class="page">
+		<div class="searchbg">
+			<header class="header">
+				<nav class="header__content">
+					<h3 class="header__logo">
+						NewsAnalyzer
+					</h3>
+					<div class="header__container">
+						<div class="header__menu header__menu_active" href="index.html"> Главная </div>
+						<a class="header__menu" href="about.html"> О проекте </a>
+					</div>
+				</nav>
+			</header>
+			<section class="search">
+				<h1 class="search__title">
+					Что в мире творится?
+				</h1>
+				<p class="search__text">
+					Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.
+				</p>
+				<form class="search__field">
+					<input type="text" name="name" class="search__field_input" placeholder="Природа" minlength='2'
+						maxlength="20" required>
+					<button class="search__field_button"> Искать </button>
+				</form>
+			</section>
+		</div>
+		<section class="preloader" style="display: none;">
+			<i class="preloader__circle"></i>
+			<p class="preloader__info">Идет поиск новостей...</p>
+		</section>
+		<section class="noresult" style="display: none;">
+			<img src="<%=require('./images/nores.svg')%>" alt="Вернуться на главную страницу" class="noresult__img">
+			<h3 class="noresult__message">Ничего не найдено</h3>
+			<p class="noresult__messageWhy">К сожалению по вашему запросу ничего не найдено.</p>
+		</section>
+		<section class="searchresult">
+			<div class="title__wrapper ">
+				<h2 class="subtitle"> Результаты поиска </h2>
+				<a class="infolink" href="analytics.html"> Посмотреть аналитику <img
+						src="<%=require('./images/arrow.svg') %>" alt="Вернуться на главную страницу"> </a>
+			</div>
+			<div class="cardlist">
+				<a class="card" href="#">
+					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
+					<div class="card__date"> 2 августа, 2019 </div>
+					<h3 class="card__name"> Национальное достояние – парки </h3>
+					<p class="card__description">
+						В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+						национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+					</p>
+					<div class="card__source"> Лента.ру </div>
+				</a>
+				<a class="card" href="#">
+					<img src="<%=require('./images/image2.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
+					<div class="card__date"> 2 августа, 2019 </div>
+					<h3 class="card__name"> Лесные огоньки: история одной фотографии </h3>
+					<p class="card__description">
+						Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+						ускользающую красоту одного
+						из местных чудес природы.
+					</p>
+					<div class="card__source"> Медуза </div>
+				</a>
+				<a class="card" href="#">
+					<img src="<%=require('./images/image3.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
+					<div class="card__date"> 2 августа, 2019 </div>
+					<h3 class="card__name"> «Первозданная тайга»: новый фотопроект Игоря Шпиленка </h3>
+					<p class="card__description">
+						Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их
+						сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+					</p>
+					<div class="card__source"> Риа </div>
+				</a>
+				<a class="card" href="#" style="display:none">
+					<img src="<%=require('./images/cardimg1.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
+					<div class="card__date"> 2 августа, 2019 </div>
+					<h3 class="card__name"> Национальное достояние – парки </h3>
+					<p class="card__description">
+						В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
+						национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+					</p>
+					<div class="card__source"> Лента.ру </div>
+				</a>
+				<a class="card" href="#" style="display:none">
+					<img src="<%=require('./images/image2.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
+					<div class="card__date"> 2 августа, 2019 </div>
+					<h3 class="card__name"> Лесные огоньки: история одной фотографии </h3>
+					<p class="card__description">
+						Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+						ускользающую красоту одного
+						из местных чудес природы.
+					</p>
+					<div class="card__source"> Медуза </div>
+				</a>
+				<a class="card" href="#" style="display:none">
+					<img src="<%=require('./images/image3.png') %>" alt="Вернуться на главную страницу"
+						class="card__image">
+					<div class="card__date"> 2 августа, 2019 </div>
+					<h3 class="card__name"> «Первозданная тайга»: новый фотопроект Игоря Шпиленка </h3>
+					<p class="card__description">
+						Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их
+						сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...
+					</p>
+					<div class="card__source"> Риа </div>
+				</a>
+			</div>
+			<button class="searchresult__see-also" href="#">
+				Показать еще
+			</button>
+		</section>
+		<section class="about-author">
+			<div class="about-author__wrapper">
+				<img src=" <%=require('./images/avatar.png') %>" alt="Вернуться на главную страницу"
+					class="about-author__photo">
+				<div class="about-author__container">
+					<h2 class="about-author__subtitle">
+						Об авторе
+					</h2>
+					<p class="about-author__info">
+						Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь,
+						какими технологиями разработки владете. <br> <br>Также можно рассказать о процессе обучения в
+						Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+					</p>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__columns">
+				<p class="footer__author">
+					&copy; 2020 Rezeda Khairullina
+				</p>
+				<ul class="footer__info">
+					<li>
+						<a href="index.html"> Главная </a>
+					</li>
+					<li>
+						<a href="about.html"> О проекте </a>
+					</li>
+					<li>
+						<a href="https://praktikum.yandex.ru/" target="_blank"> Яндекс.Практикум </a>
+					</li>
+				</ul>
+				<div class="footer__social">
+					<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img
+							src="<%=require('./images/gh.svg')%>" alt="Вернуться на главную страницу"> </a>
+					<a class="footer__social_icons" href="https://www.facebook.com/" target="_blank"> <img
+							src="<%=require('./images/facebook.svg')%>" alt="Вернуться на главную страницу"> </a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+</body>
+
+</html>

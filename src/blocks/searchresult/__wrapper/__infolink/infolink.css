@@ -1,0 +1,33 @@
+
+
+.infolink {
+	color: #1A1B22;
+	font-size: 18px;
+	margin-right: 79px;
+	display: flex;
+	align-items: center;
+
+
+}
+
+.infolink img {
+	height: 16px;
+	margin-left: 10px;
+
+	
+}
+
+ @media (max-width: 320px) {
+    .infolink {
+		width:288px; 
+		margin: auto;
+		margin-top: 16px;
+  }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .infolink {
+	padding-top: 45px;
+	margin-right: 46px;
+  }
+} 

@@ -1,0 +1,5 @@
+.techstack__container {
+    width: calc(100% - 208px);
+    margin: auto;
+    display: flex;
+}

@@ -1,0 +1,49 @@
+@import url('./__wrapper/about__wrapper.css');
+@import url('./__wrapper/__title/about__title.css');
+@import url('./__wrapper/__text/about__text.css');
+
+
+
+.about {
+    padding-top: 80px;
+    
+}
+
+@media (max-width: 320px) {
+    .about {
+        padding-top: 17px;
+        
+    }
+
+    .about__wrapper {
+        width: calc(100% - 32px);
+    }
+
+    .about__text {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        
+    }
+    .about__title {
+    
+        font-size: 30px;
+    }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .about {
+        padding-top: 30px;
+        
+    }
+
+    .about__wrapper {
+        width: calc(100% - 80px);
+    }
+
+    .about__text {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        
+    }
+
+} 

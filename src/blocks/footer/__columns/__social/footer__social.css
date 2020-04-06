@@ -1,0 +1,15 @@
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    justify-content: space-between;
+  }
+  
+
+
+  .footer__social a:last-child {
+    margin-right: 0px;
+  }
+
+  

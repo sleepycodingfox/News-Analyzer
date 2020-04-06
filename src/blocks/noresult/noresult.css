@@ -1,0 +1,10 @@
+@import url(./__img/noresult__img.css);
+@import url(./__message/noresult__message.css);
+@import url(./__reason/noresult__reason.css);
+
+.noresult {
+    min-height: 374px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,15 @@
+.test {
+    background-color: cornflowerblue;
+    height: 400px;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    background-color: darkkhaki;
+}
+
+.swiper-slide {
+    background-color: darksalmon;
+}
+

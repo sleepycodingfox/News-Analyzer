@@ -1,0 +1,7 @@
+.about__wrapper {
+    width: calc(100% - 208px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: #1A1B22;
+}
