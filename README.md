@@ -1,4 +1,4 @@
-# News Analyzer 2020
+# Diplom.Y.Praktikum2020
 
 ##### [Ссылка на проект](https://desertoraposa.github.io/Diplom.Y.Praktikum2020/) 
 
