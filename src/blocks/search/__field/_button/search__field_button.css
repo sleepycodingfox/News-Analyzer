@@ -29,3 +29,13 @@
     }
 } 
 
+.error {
+  margin-top: 10px;
+  width: 570px;
+  border-radius: 100px;
+  }
+
+.search__field_button_disabled {
+  background: #8b8785;
+  pointer-events: none;
+}
