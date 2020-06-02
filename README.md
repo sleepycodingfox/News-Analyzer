@@ -46,9 +46,11 @@
 Cкопировать проект к себе на компьютер: git clone https://github.com/DesertoRaposa/News-Analyzer.git 
 
 Установить зависимости командой: 
+
     npm install
 
 Выполнить сборку:
+    
     npm run dev
 
 ## Используемые технологии
