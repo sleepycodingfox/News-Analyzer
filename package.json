@@ -1,5 +1,5 @@
 {
-  "name": "diplom.y.praktikum2020",
+  "name": "News-Analyzer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DesertoRaposa/Diplom.Y.Praktikum2020.git"
+    "url": "git+https://github.com/DesertoRaposa/News-Analyzer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DesertoRaposa/Diplom.Y.Praktikum2020/issues"
+    "url": "https://github.com/DesertoRaposa/News-Analyzer/issues"
   },
-  "homepage": "https://github.com/DesertoRaposa/Diplom.Y.Praktikum2020#readme",
+  "homepage": "https://github.com/DesertoRaposa/News-Analyzer#readme",
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.8.4",
