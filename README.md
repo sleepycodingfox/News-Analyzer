@@ -43,7 +43,9 @@
 
 ## Как развернуть проект
 
-Cкопировать проект к себе на компьютер: git clone https://github.com/DesertoRaposa/News-Analyzer.git 
+Cкопировать проект к себе на компьютер: 
+
+    git clone https://github.com/DesertoRaposa/News-Analyzer.git 
 
 Установить зависимости командой: 
 
