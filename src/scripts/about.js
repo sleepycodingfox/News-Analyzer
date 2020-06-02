@@ -9,7 +9,7 @@ import { GithubApi } from './modules/GithubApi';
 import { CommitCardList } from './components/CommitCardList';
 
 const commitCardList = new CommitCardList();
-const apiGitHub = new GithubApi('https://api.github.com/repos/DesertoRaposa/Diplom.Y.Praktikum2020/commits?sha=level-2');
+const apiGitHub = new GithubApi('https://api.github.com/repos/DesertoRaposa/News-Analyzer/commits?sha=level-3');
 
 apiGitHub.getCommits()
     .then(result => {
