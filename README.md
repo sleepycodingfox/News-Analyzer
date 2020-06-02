@@ -45,6 +45,6 @@
 
 Достаточно зайти на страницу проекта на github.io: [ссылка на проект](https://desertoraposa.github.io/News-Analyzer/) 
 
-##Используемые технологии
+## Используемые технологии
 Нативный JS, CSS, HTML, Webpack, GIT, fetch
 
