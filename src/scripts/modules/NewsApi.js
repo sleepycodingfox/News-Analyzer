@@ -28,7 +28,7 @@ export class NewsApi {
 
     getNews(query) {
         const dates = this.constructDates();
-        const url = 'https://newsapi.org/v2/everything?' +
+        const url = 'https://nomoreparties.co/news/v2/everything?' +
             `q=${query}&` +
             `from=${dates.from}&` + 
             `to=${dates.to}&` +
