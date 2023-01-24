@@ -1,6 +1,6 @@
 # News Analyzer
 
-##### [Link](https://desertoraposa.github.io/News-Analyzer/) 
+##### [Open News Analyzer](https://desertoraposa.github.io/News-Analyzer/) 
 
 Actual version of the project 0.0.1
 
